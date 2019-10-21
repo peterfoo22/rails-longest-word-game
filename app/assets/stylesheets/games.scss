@@ -4,3 +4,38 @@
 h1 {
   color: blue;
 }
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.centered{
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+#top-page{
+  text-align: center;
+}
+
+.ourform{
+  text-align: center;
+}
+
+.output{
+  display:inline-block;
+  background-color: #b3ecff;
+  font-size: 50px;
+  font-family: bookman;
+  border: solid;
+  margin-left: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#search {
+    width: 20em;
+    height: 2em;
+}

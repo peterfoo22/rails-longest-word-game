@@ -1,9 +1,18 @@
-<h1>Word Game</h1>
-<h2><%=@random_letters %><h2>
+<div class ='container'>
+  <div class = 'centered'>
+  <h1 id = 'top-page'>Word Game</h1>
+  <h2><% @random_letters.each do |element| %>
+        <div class = 'output'><%= element %></div>
+      <% end %>
+  </h2>
 
-<form action="/score" method="post">
-  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-  <%= hidden_field_tag 'our_letters', @random_letters %>
-  <input type="text" name="word" placeholder="What is your word?">
-  <input type="submit">
-</form>
+  <form action="/score" method="post" class = 'ourform'>
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <%= hidden_field_tag 'our_letters', @random_letters %>
+    <input type="text" name="word" placeholder="What is your word?" id = "search">
+    <input type="submit">
+  </form>
+</div>
+
+
+</div>
